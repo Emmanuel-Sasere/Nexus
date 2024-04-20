@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #151f36;
+  width: 100dvw;
+  overflow-x: hidden;
+  height: 100%;
+  background: #ffffff;
+  user-select: none;
+}
+
+.hero_bg {
+  background: url(./assets/HeroImg.png) center center / cover;
+  height: 100vh;
+  width: 100%;
+}
+.joinUs {
+  background: url(./assets/JoinImg.png) center center / cover;
+  height: 80vh;
+  width: 100%;
+  padding: 20px;
+}
