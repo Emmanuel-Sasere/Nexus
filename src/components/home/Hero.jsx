@@ -3,7 +3,7 @@ import Parallax from "../../gsap/Parallex";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div>
       <Parallax className="hero_bg  ">
         <div className="max-w-6xl ms-auto me-auto relative">
           <div className="absolute z-20 mt-40 flex flex-col gap-10 bg-black bg-opacity-10 rounded-lg p-5">

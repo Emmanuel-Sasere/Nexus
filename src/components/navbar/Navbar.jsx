@@ -6,7 +6,7 @@ import Button from "../Button";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <nav className=" bg-white z-50  shadow-md fixed top-0 left-0 right-0">
+    <nav className=" bg-white z-50  shadow-md fixed -top-2 left-0 right-0">
       <div className="flex  items-center  font-medium justify-between max-w-6xl ms-auto me-auto ">
         <div className="z-50 md:w-auto py-5 px-3  w-full flex justify-between">
           <img src={Logo} alt="LCRNG Logo" className="md:cursor-pointer h-9" />
@@ -28,7 +28,7 @@ const Navbar = () => {
 
           <li>
             <Link
-              to="/"
+              to="about"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
             >
               About
@@ -52,7 +52,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="md:block hidden">
-          <Button />
+          <Link to="donate">
+            <Button />
+          </Link>
         </div>
 
         {/* Mobile Navbar */}
@@ -72,7 +74,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="about"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
             >
               About
@@ -97,7 +99,9 @@ const Navbar = () => {
           </li>
 
           <div className="py-5">
-            <Button />
+            <Link to="donate">
+              <Button />
+            </Link>
           </div>
         </ul>
       </div>
