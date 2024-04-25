@@ -5,6 +5,10 @@ import Button from "../Button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(false);
+  };
   return (
     <nav className=" bg-white z-50  shadow-md fixed -top-2 left-0 right-0">
       <div className="flex  items-center  font-medium justify-between max-w-6xl ms-auto me-auto ">
@@ -68,6 +72,7 @@ const Navbar = () => {
             <Link
               to="/"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
+              onClick={handleClick}
             >
               Home
             </Link>
@@ -76,6 +81,7 @@ const Navbar = () => {
             <Link
               to="about"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
+              onClick={handleClick}
             >
               About
             </Link>
@@ -85,6 +91,7 @@ const Navbar = () => {
             <Link
               to="/"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
+              onClick={handleClick}
             >
               Service
             </Link>
@@ -93,13 +100,14 @@ const Navbar = () => {
             <Link
               to="/"
               className="py-7 px-3  hover:text-gray-600 text-black inline-block"
+              onClick={handleClick}
             >
               Contact
             </Link>
           </li>
 
           <div className="py-5">
-            <Link to="donate">
+            <Link to="donate" onClick={handleClick}>
               <Button />
             </Link>
           </div>
